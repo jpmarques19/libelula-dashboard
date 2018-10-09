@@ -18,6 +18,7 @@ Abrir um terminal e correr estes comandos:
 
 `npm run dev`
 
+
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE.md
 [version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
