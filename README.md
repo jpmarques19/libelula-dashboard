@@ -7,11 +7,10 @@ Abrir um terminal e correr estes comandos:
 
 `npm install`   
 
-`npm run dev`
-
+`npm run dev`   
    
+---
    
-
 This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
 designed for vue js.The dashboard includes vue-router and vuex
 
