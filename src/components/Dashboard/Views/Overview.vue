@@ -50,32 +50,45 @@
 
   import StatsCard from 'components/UIComponents/Cards/StatsCard.vue'
   import ChartCard from 'components/UIComponents/Cards/ChartCard.vue'
+  import io from 'socket.io-client'
 
   export default {
     components: {
       StatsCard,
       ChartCard
     },
+
+    methods: {
+      coms () {
+        setInterval(() => {
+          var socket = io('http://localhost:3001')
+          var vm = this
+          socket.on('temp', function (msg) {
+            vm.temp = parseInt(msg)
+          // console.log(vm.temp)
+          })
+          vm.timer++
+          vm.usersChart.data.series[0].push(((vm.temp * 5000) / 1023 - 500) / 10)
+          vm.usersChart.data.series[0].shift()
+          console.log(vm.usersChart.data)
+        }, 1000)
+      }
+    },
+
+    mounted () {
+      this.coms()
+    },
     computed: {
       streamT: function () {
-        var vm = this
-        var socket = io('http://localhost:3001')
-        setInterval(socket.on('temp', function (msg) {
-          vm.temp = parseInt(msg)
-          vm.timer++
-        }), 1000)
-        console.log(this.temp)
-        this.usersChart.data.series[0].push(((this.temp * 5000) / 1023 - 500) / 10)
-        this.usersChart.data.series[0].shift()
         this.usersChart.data.labels.push(this.timer)
         this.usersChart.data.labels.shift()
-        console.log(this.usersChart.data)
         return this.usersChart.data
       }
     },
     /**
      * Chart data used to render stats, charts. Should be replaced with server data
      */
+
     data () {
       return {
         temp: 155,
