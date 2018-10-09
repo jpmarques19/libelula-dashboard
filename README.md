@@ -10,10 +10,12 @@ Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
 ![](http://i.imgur.com/3iC1hOs.gif)
 
 ## Instruções
-Abrir um terminal e correr ose comandos seguintes:
+Abrir um terminal e correr estes comandos:
 
-`git clone https://github.com/jpmarques19/libelula-dashboard.git`
-`npm install`
+`git clone https://github.com/jpmarques19/libelula-dashboard.git`   
+
+`npm install`   
+
 `npm run dev`
 
 [CHANGELOG]: ./CHANGELOG.md
