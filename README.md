@@ -1,14 +1,5 @@
 # [libelula-dashboard] [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-> Admin dashboard based on paper dashboard UI template + vue-router
-
-This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
-designed for vue js.The dashboard includes vue-router and vuex
-
-Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
-
-![](http://i.imgur.com/3iC1hOs.gif)
-
 ## Instruções
 Abrir um terminal e correr estes comandos:
 
@@ -17,6 +8,15 @@ Abrir um terminal e correr estes comandos:
 `npm install`   
 
 `npm run dev`
+
+> Admin dashboard based on paper dashboard UI template + vue-router
+
+This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
+designed for vue js.The dashboard includes vue-router and vuex
+
+Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
+
+![](http://i.imgur.com/3iC1hOs.gif)
 
 
 [CHANGELOG]: ./CHANGELOG.md
