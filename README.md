@@ -16,3 +16,4 @@ Abrir um terminal e correr ose comandos seguintes:
 `npm install`
 `npm run dev`
 
+# [libelula-dashboard] [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
