@@ -8,6 +8,15 @@ Abrir um terminal e correr estes comandos:
 `npm install`   
 
 `npm run dev`   
+
+Neste momento é necessário configurar manualmente o IP do ARTIK,    
+na linha 64 do ficheiro
+
+`/src/components/Dashboard/Views/Overview.vue`  
+
+onde se lê 
+
+`var socket = io('http://localhost:3001')`
    
 ---
    
